@@ -5,7 +5,7 @@ export default function DayCard() {
   return (
     <div className="DayCard">
       <div className="day">
-        <p>MON</p>
+        <p>TUE</p>
         <p>12&deg;</p>
       </div>
       <div className="description">

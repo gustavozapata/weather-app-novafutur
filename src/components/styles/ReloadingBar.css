@@ -1,0 +1,23 @@
+.ReloadingBar p {
+  font-size: 0.6em;
+  margin: 2px 10px;
+}
+.ReloadingBar .container {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 25px;
+  border: 2px solid var(--dark-blue);
+}
+.ReloadingBar .bar {
+  width: 100%;
+  height: 12px;
+  margin: 0px;
+  background-color: var(--loading-bar);
+  border-radius: 25px;
+  /* transition: width 5s linear; */
+  text-align: left;
+}
+.ReloadingBar .bar-move {
+  transition: width 10s linear;
+  width: 0;
+}

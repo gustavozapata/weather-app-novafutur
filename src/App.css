@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
 :root {
-  --day-card-bg: #fff;
+  --dark-blue: #282a32;
+  --header-blue: #33343e;
+  --loading-bar: #fb9709;
 }
 
 body {
   background-color: #000;
-  font-family: sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
 }
