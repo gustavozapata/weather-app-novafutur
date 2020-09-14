@@ -8,6 +8,11 @@
   border-radius: 5px;
   color: #fff;
 }
+.DayCard .day {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
 .DayCard .day p {
   display: inline-block;
   font-size: 1.4em;

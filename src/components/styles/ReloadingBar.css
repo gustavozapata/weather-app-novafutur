@@ -14,10 +14,9 @@
   margin: 0px;
   background-color: var(--loading-bar);
   border-radius: 25px;
-  /* transition: width 5s linear; */
   text-align: left;
 }
 .ReloadingBar .bar-move {
-  transition: width 10s linear;
+  transition: width 60s linear;
   width: 0;
 }

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./styles/ReloadingBar.css";
 
-export default function ReloadingBar() {
-  const [seconds, setSeconds] = useState(10);
+export default function ReloadingBar(props) {
+  const [seconds, setSeconds] = useState(60);
 
   useEffect(() => {
     timer();
@@ -10,7 +10,8 @@ export default function ReloadingBar() {
 
   useEffect(() => {
     if (seconds < 0) {
-      setSeconds(10);
+      setSeconds(60);
+      props.fetchData();
     }
   }, [seconds]);
 
@@ -22,15 +23,11 @@ export default function ReloadingBar() {
     setSeconds((second) => second - 1);
   };
 
-  //seconds = 60
-  //timer(every 1s => seconds--)
-  //when seconds < 0 => fetch data and setSeconds(60)
-
   return (
     <div className="ReloadingBar">
       <p>Reloading in {seconds}s</p>
       <div className="container">
-        <div className={`bar ${seconds === 10 ? "" : "bar-move"}`}></div>
+        <div className={`bar ${seconds === 60 ? "" : "bar-move"}`}></div>
       </div>
     </div>
   );
