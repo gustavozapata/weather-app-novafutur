@@ -1,4 +1,5 @@
 .DayCard {
+  width: 93%;
   display: flex;
   justify-content: space-between;
   margin: 8px auto;
@@ -6,4 +7,19 @@
   background: linear-gradient(#55575a, #636467);
   border-radius: 5px;
   color: #fff;
+}
+.DayCard .day p {
+  display: inline-block;
+  font-size: 1.4em;
+  margin: 20px;
+}
+.DayCard .description {
+  text-align: right;
+}
+.DayCard .description img {
+  width: 50px;
+}
+.DayCard .description p {
+  margin: 0;
+  font-size: 0.7em;
 }

@@ -4,16 +4,16 @@ import "./styles/DayCard.css";
 export default function DayCard() {
   return (
     <div className="DayCard">
-      <div>
+      <div className="day">
         <p>MON</p>
         <p>12&deg;</p>
       </div>
-      <div>
+      <div className="description">
         <img
-          src="http://openweathermap.org/img/wn/10d.png"
+          src="http://openweathermap.org/img/wn/11d.png"
           alt="Forecast Icon"
         />
-        <p>A bit cloudy</p>
+        <p>A BIT CLOUDY</p>
       </div>
     </div>
   );
