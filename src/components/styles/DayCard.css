@@ -1,0 +1,9 @@
+.DayCard {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px auto;
+  padding: 5px;
+  background: linear-gradient(#55575a, #636467);
+  border-radius: 5px;
+  color: #fff;
+}

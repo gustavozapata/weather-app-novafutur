@@ -1,0 +1,12 @@
+:root {
+  --day-card-bg: #fff;
+}
+
+body {
+  background-color: #000;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
