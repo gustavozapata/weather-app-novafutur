@@ -12,6 +12,7 @@ export default function ReloadingBar(props) {
     if (seconds < 0) {
       setSeconds(60);
       props.fetchData();
+      props.fetchWeather();
     }
   }, [seconds]);
 

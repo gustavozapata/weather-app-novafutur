@@ -15,6 +15,8 @@ export default function Header(props) {
   const fetchData = async () => {
     const response = await getWeather("london");
     setData(response.data);
+    setHour(new Date().getHours());
+    setMinute(new Date().getMinutes());
   };
 
   return (
@@ -39,7 +41,7 @@ export default function Header(props) {
         </div>
         <h2>{data && Math.round(data.main.temp - 273.15)}&deg;</h2>
       </div>
-      <ReloadingBar fetchData={props.fetchData} />
+      <ReloadingBar fetchData={props.fetchData} fetchWeather={fetchData} />
     </div>
   );
 }
