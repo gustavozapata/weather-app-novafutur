@@ -1,5 +1,11 @@
 # Weather App Nova Futur
 
+### API Key
+You'll need an API key to be able to make requests and fetch data
+- visit https://openweathermap.org/api
+- sign up and get an API key
+- go to src/services/weather-api.js and insert you API key here "<YOUR_API_KEY_HERE>"
+
 ### Installation
 - $ git clone <this_repository>
 - $ npm install
