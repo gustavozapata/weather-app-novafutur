@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apikey = "4110e7b32aa470c359bc9ec3efab7abb";
+const apikey = "<YOUR_API_KEY_HERE>"; //go to https://openweathermap.org/api to get one
 
 export const getForecast = async (city) => {
   const url = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apikey}`;
